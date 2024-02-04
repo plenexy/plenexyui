@@ -1,0 +1,55 @@
+{
+  "name": "plenexyui",
+  "author": "Roman Kapralov <qube100@yandex.ru>",
+  "private": false,
+  "version": "0.1.18",
+  "type": "module",
+  "files": [
+    "./dist"
+  ],
+  "main": "./dist/plenexy-tailwind-ui.umd.js",
+  "module": "./dist/plenexy-tailwind-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/plenexy-tailwind-ui.es.js",
+      "require": "./dist/plenexy-tailwind-ui.umd.js"
+    },
+    "./dist/plenexy-tailwind-ui.css": {
+      "import": "./dist/plenexy-tailwind-ui.css",
+      "require": "./dist/plenexy-tailwind-ui.css"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plenexy/plenexyui.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.1",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.23.9",
+    "@types/node": "^20.11.10",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "path": "^0.12.7",
+    "rollup": "^4.9.6",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.70.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-css-injected-by-js": "^3.3.1",
+    "vite-plugin-dts": "^3.7.2",
+    "vue-tsc": "^1.8.25"
+  }
+}
